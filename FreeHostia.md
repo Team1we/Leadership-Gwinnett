@@ -4,6 +4,7 @@ Gwinnett Leadership Website Project
 -------------------------------------------------
 
 Domain name: LeadershipGwinnett.online
+
 WordPress: LeadershipGwinnett.online/wordpress
 
 -------------------------------------------------
