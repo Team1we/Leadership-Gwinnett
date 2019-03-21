@@ -1,0 +1,32 @@
+<?php
+$connection = mysql_connect("localhost", "btwpip_lg", "AB123cd123"); // Establishing Connection with Server
+$db = mysql_select_db("btwpip_lg", $connection); // Selecting Database from Server
+if(isset($_POST['submit'])){ // Fetching variables of the form which travels in URL
+$fname = $_POST['FIRST_NAME'];
+$lname = $_POST['LAST_NAME'];
+$email = $_POST['EMAIL_ADRESS'];
+$password = $_POST['PASSWORD'];
+$cpassword = $_POST['CONFIRM_PASSWORD'];
+$address = $_POST['ADDRESS'];
+$city = $_POST['CITY'];
+$state = $_POST['STATE'];
+$zip = $_POST['ZIP_POSTAL_CODE'];
+// $cemail = mysql_query("SELECT 'email' FROM `LOGIN1` WHERE `email` = '$email'"); <-- old query
+
+$query="select * from LOGIN1 where email = '$email'";
+$result=mysql_query($query);
+$numOfRows=mysql_numrows($result);
+
+if($fname == '' || $lname == '' || $email == '' || $password == '' || $cpassword == '' || $address == '' || $city == '' || $state == '' || $zip == ''){
+	echo '<p><font size="+4">All fields are required.</font></p>';
+}elseif ($numOfRows==1) {
+	echo '<p><font size="+4">This email is already in use.</font></p>';
+}elseif ($password != $cpassword) {
+	echo '<p><font size="+4">Passwords do not match.</font></p>';
+}else{
+	$query = mysql_query("insert into MEMBER1(last_name, first_name, address1, city, state, zip) values ('$lname', '$fname', '$address', '$city', '$state', '$zip')");
+	$query2 = mysql_query("insert into LOGIN1(password, email) values ('$password', '$email')");
+}
+}
+mysql_close($connection); // Closing Connection with Server
+?>
