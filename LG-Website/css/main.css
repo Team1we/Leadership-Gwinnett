@@ -153,12 +153,14 @@
     background-color: #404040;
 }
 
-.btn .btn-primary {
+.btn.btn-primary,
+.btn-secondary {
     background-color: #00aeef;
+    border-color: #00aeef;
 }
 
-.display-4 {
-    font-size: 2.5em;
+.fa-stack i {
+    color: #00aeef;
 }
 
 /* source for changes: https: //work.smarchal.com/twbscolor/css/e74c3cc0392becf0f1ffbbbc0 */
@@ -177,7 +179,7 @@ html, body {
 .login-form h3 {
     text-align: center;
 }
-.submit-btn {
+.submit {
     margin-top: 1.85em;
     width: 100%;
     padding: 10px 0;
@@ -203,12 +205,153 @@ html, body {
 
 .logout-btn {
     margin-left: 3em;
-    border: solid 2px #f4f4f4;
     border-radius: 5px;
     padding: 0 10px;
     font-weight: 500;
+    border: 0;
 }
 
 .notifications {
     font-size: 1.2em;
+}
+
+.masthead {
+    text-align: center;
+    color: #f4f4f4;
+    background-image: url("../images/meeting-2-resized.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.masthead .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.masthead .intro-text .intro-lead-in {
+    font-size: 2em;
+    font-style: italic;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+.masthead .intro-text .intro-heading {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+    .masthead .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+        
+    }
+
+    .masthead .intro-text .intro-lead-in {
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+
+    .masthead .intro-text .intro-heading {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 50px;
+    }
+}
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
+#expectations {
+    padding: 100px 0;
+}
+
+#expectations h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#expectations h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+}
+
+.organizations h2 {
+    padding: 40px 0;
+}
+
+.organizations, .opportunities {
+    height: 100%;
+}
+
+.card {
+    margin-bottom: 2em;
+}
+
+.card-link {
+    color: #00aeef;
+}
+
+.organization-name {
+    margin-top: 1em;
+    margin-bottom: 0.35em;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.organization-type {
+    margin-bottom: 0.75em;
+    font-size: 0.975em;
+    font-weight: 300;
+}
+
+.organization-info h5 {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.thead-dark td {
+    background-color: #404040;
+}
+
+th, td {
+    text-align: center;
+}
+
+.table i {
+    color: #404040;
+}
+
+.opportunity-table {
+    margin-top: 1em;
+}
+
+.opportunity-table h3 {
+    margin-bottom: 1em;
+}
+
+.footer {
+    background-color: #404040;
+    color: #f4f4f4;
+    margin-top: 2.5em;
+}
+
+
+span.footer-text { 
+    text-align: center;
+    font-size: 1em;
+    color: #f4f4f4; 
 }

@@ -47,8 +47,8 @@
 
     <div class="container">
         <div class="row justify-content-center align-items-center h-100">
-            <form action="" id="signup">
-                <h3 class="display-4">Sign Up</h3><br>
+            <form action="signup-w-bootstrap.php" id="signup" method="post">
+                <h3 class="display-4">Create an Account</h3><br>
 
                 <div class="form-row">
                     <div class="col-lg">
@@ -78,15 +78,15 @@
                 <div class="form-row">
                     <div class="col-lg">
                         <label for="sign-up-PASSWORD">Password</label>
-                        <input type="text" class="form-control" name="PASSWORD" id="sign-up-PASSWORD"
+                        <input type="password" class="form-control" name="PASSWORD" id="sign-up-PASSWORD"
                             placeholder="Create your password">
                         <span class="errPassword"></span>
                     </div>
 
                     <div class="col-lg">
                         <label for="sign-up-CONFIRM_PASSWORD">Confirm Password</label>
-                        <input type="text" class="form-control" name="CONFIRM_PASSWORD" id="sign-up-CONFIRM_PASSWORD"
-                            placeholder="Confirm your password">
+                        <input type="password" class="form-control" name="CONFIRM_PASSWORD"
+                            id="sign-up-CONFIRM_PASSWORD" placeholder="Confirm your password">
                         <span class="errConfirmPassword"></span>
                     </div> <!-- password .col-lg -->
                 </div> <!-- end password .form-row -->
@@ -94,13 +94,21 @@
                 <div class="form-row">
                     <div class="col-lg">
                         <label for="sign-up-ADDRESS">Street Address</label>
-                        <input type="text" class="form-control" name="ADDRESS" id="sign-up-ADDRESS" placeholder="Enter your street address">
-                        <span class="errCity"></span>
+                        <input type="text" class="form-control" name="ADDRESS" id="sign-up-ADDRESS"
+                            placeholder="Enter your street address">
+                        <span class="errAddress"></span>
                     </div>
                 </div> <!-- end address .form-row -->
 
                 <div class="form-row">
-                    <div class="col-lg-9">
+                    <div class="col-lg-3">
+                        <label for="sign-up-CITY">City</label>
+                        <input type="text" class="form-control" name="CITY" id="sign-up-CITY"
+                            placeholder="Enter your city">
+                        <span class="errCity"></span>
+                    </div> <!-- end city -->
+
+                    <div class="col-lg-6">
                         <label for="sign-up-STATE">State</label>
                         <select class="form-control" name="STATE" id="sign-up-STATE">
                             <option value="none-selected">Choose your state</option>
@@ -157,19 +165,32 @@
                             <option value="WY">Wyoming</option>
                         </select>
                         <span class="errState"></span>
-                    </div>
+                    </div> <!-- end state -->
                     <div class="col-lg-3">
                         <label for="sign-up-ZIP_POSTAL_CODE">Zip Code</label>
-                        <input class="form-control" type="text" name="ZIP_POSTAL_CODE" id="sign-up-ZIP_POSTAL_CODE" placeholder="Zip code">
+                        <input class="form-control" type="text" name="ZIP_POSTAL_CODE" id="sign-up-ZIP_POSTAL_CODE"
+                            placeholder="Zip code">
                         <span class="errZip"></span>
-                    </div>
+                    </div> <!-- end zip -->
                 </div> <!-- end state selection -->
 
-                <button type="submit" id="btnSubmit" class="btn btn-primary submit-btn">Sign Up</button>
+                <button type="submit" class="btn btn-primary submit" id="btnSubmit" name="submit" value="Sign Up">Sign
+                    Up</button>
             </form> <!-- end sign up form -->
         </div> <!-- end row -->
     </div> <!-- close container-->
-
+    
+    <section class="footer">
+        <div class="container-fluid">
+            <div class="col-lg">
+                <div class="navbar">
+                    <span class="card-body text-center">
+                        Navbar text with an inline element
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- jQuery, Popper.js, Bootstrap JS (for bootstrap usage) -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -182,7 +203,7 @@
     </script>
 
     <!-- validation script -->
-    <script src="../js/validation.js"></script>
+    <!-- <script src="../js/validation.js"></script> -->
 </body>
 
 </html>

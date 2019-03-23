@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic"
+        rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- CHANGE THIS DYNAMICALLY -->
+    <title>Organization</title>
+</head>
+<body>
+    <!-- main navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <!-- brand/logo -->
+            <a href="welcome.html" class="navbar-brand"><span id="lg-logo">Leadership</span> Gwinnett</a>
+
+            <!-- button for mobile devices -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="welcome.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="success-stories.html" class="nav-link">Spotlight</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="organization-list.html" class="nav-link">Organizations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="profile.html" class="nav-link">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="notifications.html" class="nav-link notifications"><i class="far fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item logout-btn">
+                        <a href="../index.html" class="nav-link"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="organization-page">
+        <div class="container">
+            <div class="orgization-profile">
+                <!-- UPDATE DYNAMICALLY -->
+                <h2 class="display-4 organization-name">Organization Name</h2>
+                <!-- UPDATE DYNAMICALLY -->
+                <h5 class="organization-type">Organization Type</h5>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- UPDATE DYNAMICALLY -->
+                        <img src="http://via.placeholder.com/450x450" class="rounded float-left organization-img" alt="image">
+                    </div>
+                    <div class="col-lg-6 organization-info">
+                        <div class="row">
+                            <h5>Location Information</h5>
+                            <dl class="row">
+                                <!-- UPDATE DYNAMICALLY -->
+                                <dt class="col-sm-3">Street Address</dt>
+                                <dd class="col-sm-9">1234 West Main St.</dd>
+                                
+                                <!-- UPDATE DYNAMICALLY -->
+                                <dt class="col-sm-3">City</dt>
+                                <dd class="col-sm-9">Lawrenceville</dd>
+                                
+                                <!-- UPDATE DYNAMICALLY -->
+                                <dt class="col-sm-3">State</dt>
+                                <dd class="col-sm-9">Georgia</dd>
+                            </dl>
+                        </div> <!-- end location information -->
+                        <div class="row">
+                            <h5>Contact Information</h5>
+                            <dl class="row">
+                                <!-- UPDATE DYNAMICALLY -->
+                                <dt class="col-sm-3">Main Phone</dt>
+                                <dd class="col-sm-9">123-456-4444</dd>
+                                
+                                <!-- UPDATE DYNAMICALLY -->
+                                <dt class="col-sm-3">Alternate</dt>
+                                <dd class="col-sm-9">234-567-5555</dd>
+                                
+                                <!-- UPDATE DYNAMICALLY -->
+                                <dt class="col-sm-3">Fax</dt>
+                                <dd class="col-sm-9">345-456-6666</dd>
+                                
+                                <!-- UPDATE DYNAMICALLY -->
+                                <dt class="col-sm-3">Email</dt>
+                                <dd class="col-sm-9">organization@email.com</dd><br><br><br>
+                                
+                                <!-- UPDATE LINK DYNAMICALLY -->
+                                <dt class="col-sm">
+                                    <a class="col-sm-3 btn btn-primary" href="#">Visit Website</a>
+                                </dt>
+                            </dl>
+                        </div>
+                    </div> <!-- end organization information -->
+                </div> <!-- end organization information row -->
+            </div>
+        </div>
+        
+        <div class="container opportunity-table">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- UPDATE NAME DYNAMICALLY -->
+                    <h2 class="display-4 organization-name">Opportunities at <span>Organization Name</span></h2>
+                    <table class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Title</th>
+                                <th scope="col">Date Posted</th>
+                                <th class="special-opportunity" scope="col">Board?</th>
+                                <th class="special-opportunity" scope="col">Committee?</th>
+                                <th>View</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Title</td>
+                                <td>11-10-2019</td>
+                                <td class="special-opportunity"><i class="fas fa-times"></i></td>
+                                <td class="special-opportunity"><i class="fas fa-times"></i></td>
+                                <td><a href="#" class="opportunity-link">View More</a></td>
+                            </tr>
+                            <tr>
+                                <td>Title</td>
+                                <td>12-11-2019</td>
+                                <td class="special-opportunity"><i class="fas fa-check"></i></td>
+                                <td class="special-opportunity"><i class="fas fa-times"></i></td>
+                                <td><a href="#" class="opportunity-link">View More</a></td>
+                            </tr>
+                            <tr>
+                                <td>Title</td>
+                                <td>1-10-2019</td>
+                                <td class="special-opportunity"><i class="fas fa-times"></i></td>
+                                <td class="special-opportunity"><i class="fas fa-check"></i></td>
+                                <td><a href="#" class="opportunity-link">View More</a></td>
+                            </tr>
+                            <tr>
+                                <td>Title</td>
+                                <td>1-10-2019</td>
+                                <td class="special-opportunity"><i class="fas fa-times"></i></td>
+                                <td class="special-opportunity"><i class="fas fa-check"></i></td>
+                                <td><a href="#" class="opportunity-link">View More</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <div class="container-fluid">
+            <div class="col-lg">
+                <div class="navbar">
+                    <span class="card-body text-center">
+                        Navbar text with an inline element
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- jQuery, Popper.js, Bootstrap JS (for bootstrap usage) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+</html>
